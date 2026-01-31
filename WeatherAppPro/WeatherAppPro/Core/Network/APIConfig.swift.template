@@ -1,0 +1,19 @@
+//
+//  APIConfig.swift.template
+//  WeatherAppPro
+//
+//  Created by Dony on 31/01/26
+//
+//  SETUP INSTRUCTIONS:
+//  1. Copy this file and rename it to APIConfig.swift (remove .template)
+//  2. Get your free API key from https://www.weatherapi.com/signup.aspx
+//  3. Replace "YOUR_API_KEY_HERE" with your actual key
+//  4. Never commit APIConfig.swift to version control (it's in .gitignore)
+
+import Foundation
+
+enum APIConfig {
+    /// WeatherAPI.com API Key
+    /// Get your free key at: https://www.weatherapi.com/signup.aspx
+    static let weatherAPIKey = "YOUR_API_KEY_HERE"
+}
