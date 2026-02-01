@@ -1,3 +1,5 @@
+import Foundation
+
 //
 //  AstronomyRepositoryProtocol.swift
 //  WeatherAppPro

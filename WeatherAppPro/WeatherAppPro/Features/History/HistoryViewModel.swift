@@ -5,6 +5,8 @@
 //  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
+import Foundation
+import Combine
 
 enum HistoryViewState: Equatable {
     case idle
@@ -16,6 +18,11 @@ enum HistoryViewState: Equatable {
     var isLoading: Bool {
         if case .loading = self { return true }
         return false
+    }
+    
+    var errorMessage: String? {
+        if case .error(let msg) = self { return msg }
+        return nil
     }
 }
 

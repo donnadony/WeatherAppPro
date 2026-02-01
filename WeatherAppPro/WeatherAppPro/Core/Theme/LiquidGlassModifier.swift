@@ -5,6 +5,7 @@
 //  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
+import SwiftUI
 
 /// ViewModifier for applying liquid glass effect
 struct LiquidGlassModifier: ViewModifier {

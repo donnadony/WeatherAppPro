@@ -6,6 +6,7 @@
 //
 
 import Combine
+import SwiftUI
 
 /// Router manages the navigation state using NavigationPath
 /// This is the single source of truth for navigation in the app

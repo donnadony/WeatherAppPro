@@ -5,9 +5,10 @@
 //  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
+import SwiftUI
 
 struct SearchView: View {
-    @StateObject private var viewModel: Container.shared.makeSearchViewModel()
+    @StateObject private var viewModel = Container.shared.makeSearchViewModel()
     @EnvironmentObject private var router: Router
     @EnvironmentObject private var weatherViewModel: WeatherViewModel
     

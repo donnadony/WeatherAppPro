@@ -5,6 +5,7 @@
 //  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
+import Foundation
 
 /// Protocol for local data operations
 protocol LocalDataSourceProtocol: Sendable {

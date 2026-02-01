@@ -1,3 +1,5 @@
+import Foundation
+
 //
 //  DomainError.swift
 //  WeatherAppPro

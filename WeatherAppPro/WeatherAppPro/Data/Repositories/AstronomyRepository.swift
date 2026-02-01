@@ -5,6 +5,7 @@
 //  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
+import Foundation
 
 final class AstronomyRepository: AstronomyRepositoryProtocol {
     private let remoteDataSource: RemoteDataSourceProtocol

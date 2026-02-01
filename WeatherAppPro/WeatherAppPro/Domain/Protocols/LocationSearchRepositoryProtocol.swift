@@ -1,3 +1,5 @@
+import Foundation
+
 //
 //  LocationSearchRepositoryProtocol.swift
 //  WeatherAppPro

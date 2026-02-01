@@ -5,6 +5,7 @@
 //  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
+import Foundation
 
 /// The DI Container manages all dependencies in the app
 /// This is the single source of truth for object creation

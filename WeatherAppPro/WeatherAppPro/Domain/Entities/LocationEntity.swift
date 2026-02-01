@@ -1,3 +1,5 @@
+import Foundation
+
 //
 //  LocationEntity.swift
 //  WeatherAppPro

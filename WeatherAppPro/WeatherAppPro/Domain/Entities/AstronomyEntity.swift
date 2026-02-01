@@ -1,3 +1,5 @@
+import Foundation
+
 //
 //  AstronomyEntity.swift
 //  WeatherAppPro

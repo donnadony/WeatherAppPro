@@ -5,10 +5,11 @@
 //  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
+import Foundation
 
 /// App navigation routes
 /// Each case represents a unique screen/destination in the app
-enum Route: Hashable, Sendable {
+enum Route: Hashable, Sendable, Identifiable {
     // MARK: - Main Routes
     
     /// Home/Weather screen
@@ -49,6 +50,35 @@ enum Route: Hashable, Sendable {
     
     /// Location on map
     case locationMap(location: LocationEntity)
+    
+    // MARK: - Identifiable
+    
+    var id: String {
+        switch self {
+        case .home:
+            return "home"
+        case .search:
+            return "search"
+        case .settings:
+            return "settings"
+        case .forecast(let locationId):
+            return "forecast-\(locationId.uuidString)"
+        case .hourlyDetail(let dayIndex):
+            return "hourlyDetail-\(dayIndex)"
+        case .dailyDetail(let dayIndex):
+            return "dailyDetail-\(dayIndex)"
+        case .astronomy(let location):
+            return "astronomy-\(location.id.uuidString)"
+        case .timeZone(let location):
+            return "timeZone-\(location.id.uuidString)"
+        case .history(let location):
+            return "history-\(location.id.uuidString)"
+        case .locationDetail(let location):
+            return "locationDetail-\(location.id.uuidString)"
+        case .locationMap(let location):
+            return "locationMap-\(location.id.uuidString)"
+        }
+    }
 }
 
 // MARK: - Route Helpers

@@ -5,6 +5,7 @@
 //  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
+import Foundation
 import Combine
 
 enum TemperatureUnit: String, CaseIterable, Identifiable {
@@ -55,8 +56,8 @@ final class SettingsViewModel: ObservableObject, Sendable {
     // MARK: - Initialization
     
     init() {
-        self.temperatureUnit = UserDefaults.standard.enum(forKey: Keys.temperatureUnit) ?? .celsius
-        self.windSpeedUnit = UserDefaults.standard.enum(forKey: Keys.windSpeedUnit) ?? .kph
+        self.temperatureUnit = UserDefaults.standard.decodedEnum(forKey: Keys.temperatureUnit) ?? .celsius
+        self.windSpeedUnit = UserDefaults.standard.decodedEnum(forKey: Keys.windSpeedUnit) ?? .kph
         self.useMetricSystem = UserDefaults.standard.bool(forKey: Keys.useMetricSystem)
     }
     
@@ -119,7 +120,7 @@ final class SettingsViewModel: ObservableObject, Sendable {
 // MARK: - UserDefaults Helpers
 
 extension UserDefaults {
-    func enum<T: RawRepresentable>(forKey key: String) -> T? where T.RawValue == String {
+    func decodedEnum<T: RawRepresentable>(forKey key: String) -> T? where T.RawValue == String {
         guard let value = string(forKey: key) else { return nil }
         return T(rawValue: value)
     }
