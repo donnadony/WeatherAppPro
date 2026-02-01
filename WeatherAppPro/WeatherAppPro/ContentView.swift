@@ -2,46 +2,48 @@
 //  ContentView.swift
 //  WeatherAppPro
 //
-//  Created by Dony on 31/01/26.
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     @StateObject private var router = Router()
-    @StateObject private var weatherViewModel = WeatherViewModel()
-    @StateObject private var settingsViewModel = SettingsViewModel()
+    
+    // ViewModels from DI Container
+    private let weatherViewModel: WeatherViewModel
+    private let settingsViewModel: SettingsViewModel
+    
+    init() {
+        // Create ViewModels using DI Container
+        self.weatherViewModel = Container.shared.makeWeatherViewModel()
+        self.settingsViewModel = Container.shared.makeSettingsViewModel()
+    }
     
     var body: some View {
         NavigationStack(path: $router.path) {
-            WeatherView()
-                .navigationTitle("Weather")
+            WeatherHomeView()
                 .navigationDestination(for: Route.self) { route in
-                    switch route {
-                    case .home:
-                        WeatherView()
-                    case .forecast(let location):
-                        Text("Forecast for \(location)")
-                    case .search:
-                        SearchView()
-                    case .settings:
-                        SettingsView()
-                    case .locationDetail(let id):
-                        Text("Location: \(id)")
-                    case .astronomy(let location):
-                        AstronomyView(location: location)
-                    case .timeZone(let location):
-                        TimeZoneView(location: location)
-                    case .history(let location):
-                        HistoryView(location: location)
-                    }
+                    RouteViewFactory.view(for: route, router: router)
                 }
         }
         .environmentObject(router)
         .environmentObject(weatherViewModel)
         .environmentObject(settingsViewModel)
+        .sheet(item: $router.presentedSheet) { route in
+            NavigationStack {
+                RouteViewFactory.view(for: route, router: router)
+            }
+        }
+        .fullScreenCover(item: $router.presentedFullScreen) { route in
+            NavigationStack {
+                RouteViewFactory.view(for: route, router: router)
+            }
+        }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     ContentView()
