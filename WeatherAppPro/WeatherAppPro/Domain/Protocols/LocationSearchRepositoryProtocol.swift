@@ -2,10 +2,9 @@
 //  LocationSearchRepositoryProtocol.swift
 //  WeatherAppPro
 //
-//  Repository protocol for Location Search
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Protocol defining location search repository operations
 protocol LocationSearchRepositoryProtocol: Sendable {

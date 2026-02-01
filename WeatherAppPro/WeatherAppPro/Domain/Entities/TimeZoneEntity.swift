@@ -2,10 +2,9 @@
 //  TimeZoneEntity.swift
 //  WeatherAppPro
 //
-//  Domain entity for TimeZone data - framework independent
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Time zone data - domain entity
 struct TimeZoneEntity: Identifiable, Codable, Hashable, Sendable {

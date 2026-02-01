@@ -2,10 +2,9 @@
 //  SettingsViewModel.swift
 //  WeatherAppPro
 //
-//  Settings ViewModel - manages app preferences
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 import Combine
 
 enum TemperatureUnit: String, CaseIterable, Identifiable {

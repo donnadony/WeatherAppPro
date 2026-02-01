@@ -2,10 +2,9 @@
 //  WeatherData.swift
 //  WeatherAppPro
 //
-//  Created by Dony on 31/01/26
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Weather data model
 struct WeatherData: Identifiable, Codable {

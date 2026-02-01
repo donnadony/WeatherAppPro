@@ -2,10 +2,9 @@
 //  Router.swift
 //  WeatherAppPro
 //
-//  Navigation Router - manages NavigationPath and navigation state
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import SwiftUI
 import Combine
 
 /// Router manages the navigation state using NavigationPath

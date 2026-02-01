@@ -2,10 +2,9 @@
 //  RemoteDataSource.swift
 //  WeatherAppPro
 //
-//  Handles all network requests to WeatherAPI.com
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Protocol for remote data operations
 protocol RemoteDataSourceProtocol: Sendable {

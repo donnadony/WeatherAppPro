@@ -2,10 +2,9 @@
 //  TimeZoneViewModel.swift
 //  WeatherAppPro
 //
-//  Refactored TimeZone ViewModel using Clean Architecture
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 enum TimeZoneViewState: Equatable {
     case idle

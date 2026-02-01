@@ -2,10 +2,9 @@
 //  LocationSearchRepository.swift
 //  WeatherAppPro
 //
-//  Repository implementation for Location Search
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 final class LocationSearchRepository: LocationSearchRepositoryProtocol {
     private let remoteDataSource: RemoteDataSourceProtocol

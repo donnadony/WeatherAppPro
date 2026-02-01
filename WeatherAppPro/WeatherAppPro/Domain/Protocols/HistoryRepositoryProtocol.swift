@@ -2,10 +2,9 @@
 //  HistoryRepositoryProtocol.swift
 //  WeatherAppPro
 //
-//  Repository protocol for Historical Weather data
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Protocol defining history repository operations
 protocol HistoryRepositoryProtocol: Sendable {

@@ -2,10 +2,9 @@
 //  WeatherAPIModels.swift
 //  WeatherAppPro
 //
-//  WeatherAPI.com Response Models - Data Layer
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 // MARK: - Weather API Response
 

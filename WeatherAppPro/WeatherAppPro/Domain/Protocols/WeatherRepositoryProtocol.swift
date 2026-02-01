@@ -2,10 +2,9 @@
 //  WeatherRepositoryProtocol.swift
 //  WeatherAppPro
 //
-//  Repository protocol for Weather - defines the contract without implementation details
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Protocol defining weather repository operations
 /// This is the boundary between domain and data layers

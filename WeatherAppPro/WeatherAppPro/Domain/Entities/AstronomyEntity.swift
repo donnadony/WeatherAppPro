@@ -2,10 +2,9 @@
 //  AstronomyEntity.swift
 //  WeatherAppPro
 //
-//  Domain entity for Astronomy data - framework independent
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Astronomy data - domain entity
 struct AstronomyEntity: Identifiable, Codable, Hashable, Sendable {

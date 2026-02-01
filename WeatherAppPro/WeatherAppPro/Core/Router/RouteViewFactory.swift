@@ -2,10 +2,9 @@
 //  RouteViewFactory.swift
 //  WeatherAppPro
 //
-//  Factory for creating views from routes
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import SwiftUI
 
 /// Factory that creates the appropriate view for each route
 @MainActor

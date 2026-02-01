@@ -2,10 +2,9 @@
 //  WeatherHomeView.swift
 //  WeatherAppPro
 //
-//  Main Weather View - 100% UI only, all logic in ViewModel
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import SwiftUI
 
 struct WeatherHomeView: View {
     @EnvironmentObject private var viewModel: WeatherViewModel

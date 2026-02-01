@@ -2,10 +2,9 @@
 //  Route.swift
 //  WeatherAppPro
 //
-//  App navigation routes - all possible destinations in the app
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// App navigation routes
 /// Each case represents a unique screen/destination in the app

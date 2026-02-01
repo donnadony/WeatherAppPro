@@ -2,10 +2,9 @@
 //  WeatherAppProApp.swift
 //  WeatherAppPro
 //
-//  Created by Donnadony Mollo on 31/01/26.
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import SwiftUI
 import SwiftData
 
 @main

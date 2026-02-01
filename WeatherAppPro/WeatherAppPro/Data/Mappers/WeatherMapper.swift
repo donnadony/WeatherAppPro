@@ -2,10 +2,9 @@
 //  WeatherMapper.swift
 //  WeatherAppPro
 //
-//  Maps between API models and Domain entities
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Maps Weather API responses to Domain entities
 enum WeatherMapper {

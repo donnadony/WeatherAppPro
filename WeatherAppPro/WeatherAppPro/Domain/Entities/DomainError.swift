@@ -2,10 +2,9 @@
 //  DomainError.swift
 //  WeatherAppPro
 //
-//  Domain layer errors - framework independent
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Domain-level errors - independent of any framework or external service
 enum DomainError: Error, Equatable {

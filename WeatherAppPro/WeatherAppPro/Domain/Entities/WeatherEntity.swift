@@ -2,10 +2,9 @@
 //  WeatherEntity.swift
 //  WeatherAppPro
 //
-//  Domain entity for Weather - framework independent
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Current weather conditions - domain entity
 struct WeatherEntity: Identifiable, Codable, Hashable, Sendable {

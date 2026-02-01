@@ -2,10 +2,9 @@
 //  HistoryRepository.swift
 //  WeatherAppPro
 //
-//  Repository implementation for Historical Weather data
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 final class HistoryRepository: HistoryRepositoryProtocol {
     private let remoteDataSource: RemoteDataSourceProtocol

@@ -2,10 +2,9 @@
 //  LocationEntity.swift
 //  WeatherAppPro
 //
-//  Domain entity for Location - framework independent
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Location entity - core domain model
 /// Represents a geographic location without framework dependencies

@@ -2,10 +2,9 @@
 //  HistoricalWeatherEntity.swift
 //  WeatherAppPro
 //
-//  Domain entity for Historical Weather data - framework independent
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Historical weather data - domain entity
 struct HistoricalWeatherEntity: Identifiable, Codable, Hashable, Sendable {

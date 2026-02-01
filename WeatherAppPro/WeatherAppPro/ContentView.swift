@@ -2,10 +2,9 @@
 //  ContentView.swift
 //  WeatherAppPro
 //
-//  Main Content View - sets up NavigationStack with Router
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import SwiftUI
 
 struct ContentView: View {
     @StateObject private var router = Router()

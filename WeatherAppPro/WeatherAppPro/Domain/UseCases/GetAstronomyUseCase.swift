@@ -2,10 +2,9 @@
 //  GetAstronomyUseCase.swift
 //  WeatherAppPro
 //
-//  Use case for fetching astronomy data
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Use case for getting astronomy data
 @MainActor

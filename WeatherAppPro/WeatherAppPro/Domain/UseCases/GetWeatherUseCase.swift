@@ -2,10 +2,9 @@
 //  GetWeatherUseCase.swift
 //  WeatherAppPro
 //
-//  Use case for fetching weather with caching strategy
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Use case for getting weather data
 /// Encapsulates the business logic for weather retrieval including caching strategy

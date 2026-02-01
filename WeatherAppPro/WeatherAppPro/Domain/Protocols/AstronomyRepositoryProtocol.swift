@@ -2,10 +2,9 @@
 //  AstronomyRepositoryProtocol.swift
 //  WeatherAppPro
 //
-//  Repository protocol for Astronomy data
+//  Created by Donnadony Mollo on Feb 1, 2026.
 //
 
-import Foundation
 
 /// Protocol defining astronomy repository operations
 protocol AstronomyRepositoryProtocol: Sendable {
